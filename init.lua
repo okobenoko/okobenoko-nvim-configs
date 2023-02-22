@@ -1,0 +1,5 @@
+print ("Hell0 W0rld!")
+require("core.options")
+require("plugins.plugins")
+require("plugins.theme")
+require("plugins.treesitter")
