@@ -17,5 +17,9 @@ require("lazy").setup({
 "kyazdani42/nvim-tree.lua",
 "kyazdani42/nvim-web-devicons",
 "williamboman/mason.nvim",
-"williamboman/mason-lspconfig.nvim"
+"williamboman/mason-lspconfig.nvim",
+"neovim/nvim-lspconfig",
+"nvim-lualine/lualine.nvim"
 })
+-- Bootload One line of bootable plugins
+
