@@ -1,5 +1,7 @@
 print ("Hell0 W0rld!")
 require("core.options")
+require("core.keymaps")
 require("plugins.plugins")
 require("plugins.theme")
 require("plugins.treesitter")
+require("plugins.nvim-tree")

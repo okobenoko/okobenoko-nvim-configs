@@ -13,6 +13,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({ 
 "olimorris/onedarkpro.nvim",
-'nvim-treesitter/nvim-treesitter',
-"wbthomason/packer.nvim"
+"nvim-treesitter/nvim-treesitter",
+"kyazdani42/nvim-tree.lua",
+"kyazdani42/nvim-web-devicons",
+"williamboman/mason.nvim",
+"williamboman/mason-lspconfig.nvim"
 })
