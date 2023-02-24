@@ -16,9 +16,18 @@ require("lazy").setup({
 "nvim-treesitter/nvim-treesitter",
 "kyazdani42/nvim-tree.lua",
 "kyazdani42/nvim-web-devicons",
+-- LSP
 "williamboman/mason.nvim",
 "williamboman/mason-lspconfig.nvim",
 "neovim/nvim-lspconfig",
+"hrsh7th/cmp-nvim-lsp",
+"hrsh7th/cmp-buffer",
+"hrsh7th/cmp-path",
+"hrsh7th/cmp-cmdline",
+"hrsh7th/nvim-cmp",
+"hrsh7th/cmp-vsnip",
+"hrsh7th/vim-vsnip",
+"onsails/lspkind-nvim",
 "nvim-lualine/lualine.nvim"
 })
 -- Bootload One line of bootable plugins
