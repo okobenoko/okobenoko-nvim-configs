@@ -16,6 +16,8 @@
       -- documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
+      ['<C-k>'] = cmp.mapping.select_prev_item(), 
+      ['<C-j>'] = cmp.mapping.select_next_item(),
       ['<C-b>'] = cmp.mapping.scroll_docs(-4),
       ['<C-f>'] = cmp.mapping.scroll_docs(4),
       ['<C-Space>'] = cmp.mapping.complete(),
@@ -62,33 +64,18 @@
 
   -- Setup lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['lua_ls'].setup {
+  function lspboot(lspname)
+  require('lspconfig')[lspname].setup {
     capabilities = capabilities
   }
-  require('lspconfig')['bashls'].setup {
-    capabilities = capabilities
-  } 
-	require('lspconfig')['cssls'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['html'].setup {
-    capabilities = capabilities
-  } 
-	require('lspconfig')['tsserver'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['rust_analyzer'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['marksman'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['ruby_ls'].setup {
-    capabilities = capabilities
-  }
-
-	
+	end
+  lspboot('bashls')
+	lspboot('cssls')
+  lspboot('html')
+  lspboot('tsserver')
+  lspboot('rust_analyzer')
+  lspboot('marksman')
+  lspboot('ruby_ls')
 
 
 

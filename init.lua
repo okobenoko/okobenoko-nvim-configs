@@ -9,3 +9,4 @@ require("plugins.lualine")
 -- LSP
 require("lsp.mason")
 require("lsp.cmp")
+require("neovide")
